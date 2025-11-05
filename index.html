@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping Cost Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📦 Shipping Cost & Delivery Estimate</h1>
+
+      <form id="shippingForm">
+        <label for="weight">Package Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight" required />
+
+        <label for="distance">Distance (km):</label>
+        <input
+          type="number"
+          id="distance"
+          placeholder="Enter distance"
+          required
+        />
+
+        <label for="shippingType">Shipping Type:</label>
+        <select id="shippingType" required>
+          <option value="standard">Standard</option>
+          <option value="express">Express</option>
+          <option value="overnight">Overnight</option>
+        </select>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
